@@ -434,6 +434,32 @@ h3 {
   margin-bottom: 0;
 }
 
+.directory-link {
+  align-items: center;
+  background: #0f0e0d;
+  border-top: 1px solid rgba(244, 238, 228, 0.12);
+  display: flex;
+  gap: 18px;
+  justify-content: center;
+  padding: 24px clamp(18px, 4vw, 56px);
+}
+
+.directory-link p {
+  color: var(--muted);
+  font-size: 0.82rem;
+  margin: 0;
+}
+
+.directory-link a,
+.directory-link img {
+  display: block;
+}
+
+.directory-link img {
+  height: 41px;
+  width: 181px;
+}
+
 @media (max-width: 900px) {
   .hero {
     min-height: auto;
@@ -497,6 +523,12 @@ h3 {
 
   .hero-banner > img {
     object-position: center;
+  }
+
+  .directory-link {
+    flex-direction: column;
+    gap: 12px;
+    text-align: center;
   }
 
   .section {
