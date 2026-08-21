@@ -244,6 +244,60 @@ h3 {
   color: var(--paper);
 }
 
+.release {
+  background: #111512;
+  border-bottom: 1px solid rgba(244, 238, 228, 0.12);
+  border-top: 1px solid rgba(244, 238, 228, 0.12);
+  padding: clamp(64px, 8vw, 110px) clamp(18px, 4vw, 56px);
+}
+
+.release-inner {
+  align-items: center;
+  display: grid;
+  gap: clamp(36px, 7vw, 88px);
+  grid-template-columns: minmax(280px, 420px) minmax(0, 1fr);
+  margin: 0 auto;
+  max-width: 1180px;
+}
+
+.release-artwork {
+  aspect-ratio: 1;
+  background: #080706;
+  border: 1px solid rgba(244, 238, 228, 0.16);
+  display: flex;
+  overflow: hidden;
+}
+
+.release-artwork img {
+  height: 100%;
+  object-fit: contain;
+  width: 100%;
+}
+
+.release-copy {
+  max-width: 680px;
+}
+
+.release-copy h2 {
+  font-size: clamp(2.5rem, 5vw, 4.8rem);
+}
+
+.release-date {
+  color: var(--brass);
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: 0.92rem;
+  font-weight: 700;
+  margin-bottom: 18px;
+  text-transform: uppercase;
+}
+
+.release-description {
+  color: var(--muted);
+  font-size: 1.1rem;
+  line-height: 1.7;
+  margin-bottom: 28px;
+}
+
 .section {
   margin: 0 auto;
   max-width: 1180px;
@@ -466,6 +520,7 @@ h3 {
   }
 
   .split,
+  .release-inner,
   .service-grid,
   .video-card,
   .date-list {
